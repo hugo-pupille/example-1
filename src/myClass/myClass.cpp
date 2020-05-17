@@ -49,6 +49,18 @@ myClass::myClass(
   }
 }
 
+myClass::~myClass()
+{
+  if(spro_u16NbrofObjects > (unsigned short)0)
+  {
+    spro_u16NbrofObjects -= (unsigned short)1;
+  }
+  else
+  {
+    /* Nothing to be done */
+  }
+}
+
 
 /* ----------------- PROTECTED FUNCTIONS DEFINITION ---------------- */
 unsigned short myClass::getNbrOfObjects(void)

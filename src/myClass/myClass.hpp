@@ -12,11 +12,13 @@ class myClass
     myClass(
         unsigned char u8Arg = (unsigned char)0);
 
+    ~myClass();
+
 
   protected :
     unsigned char mpro_u8Var;
 
     static unsigned short spro_u16NbrofObjects;
 
-    unsigned short getNbrOfObjects(void);
+    static unsigned short getNbrOfObjects(void);
 };
