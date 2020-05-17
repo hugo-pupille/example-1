@@ -1,4 +1,6 @@
+/* --------------------------- INCLUSIONS -------------------------- */
 #include "myClass.hpp"
+
 
 /* ---------------- STATIC VARIABLES INITIALIZATION ---------------- */
 unsigned short myClass::spro_u16NbrofObjects = (unsigned short)0;
@@ -34,6 +36,11 @@ unsigned char myClass::getVar(void)
   return this->mpro_u8Var;
 }
 
+unsigned short myClass::getNbrOfObjects(void)
+{
+  return spro_u16NbrofObjects;
+}
+
 myClass::myClass(
     unsigned char u8Arg)
 {
@@ -63,7 +70,3 @@ myClass::~myClass()
 
 
 /* ----------------- PROTECTED FUNCTIONS DEFINITION ---------------- */
-unsigned short myClass::getNbrOfObjects(void)
-{
-  return spro_u16NbrofObjects;
-}
